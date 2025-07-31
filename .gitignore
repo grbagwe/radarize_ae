@@ -135,3 +135,5 @@ data/*
 *.pgm
 /output_*
 log
+eval.zip
+dataset.zip

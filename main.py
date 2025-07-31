@@ -45,6 +45,7 @@ if __name__ == "__main__":
     update_config(cfg, args)
 
     # Preprocess datasets. (bag -> npz)
+    print("Preprocessing datasets...")
     bag_paths = sorted(glob.glob(os.path.join(cfg["DATASET"]["PATH"], "*.bag")))
     bag_paths = [x for x in bag_paths if not os.path.exists(x.replace(".bag", ".npz"))]
     run_commands(
@@ -54,7 +55,9 @@ if __name__ == "__main__":
         ],
         args.n_proc,
     )
+    print("Dataset preprocessing completed.")
 
+    print("Preparing training and testing datasets...")
     train_npz_paths = sorted(
         [
             os.path.join(cfg["DATASET"]["PATH"], os.path.basename(x) + ".npz")
@@ -67,8 +70,10 @@ if __name__ == "__main__":
             for x in cfg["DATASET"]["TEST_SPLIT"]
         ]
     )
+    print("prepare training and testing datasets completed.")
 
     # Extract ground truth.
+    print("Extracting ground truth...")
     run_commands(
         [
             ["tools/extract_gt.py", f"--cfg={args.cfg}", f"--npz_path={x}"]
@@ -76,16 +81,21 @@ if __name__ == "__main__":
         ],
         args.n_proc,
     )
+    print("Ground truth extraction completed.")
+
 
     # Train flow models.
+    print("Training flow models...")
     subprocess.run(["tools/train_flow.py", f"--cfg={args.cfg}"], check=True)
     subprocess.run(["tools/test_flow.py", f"--cfg={args.cfg}"], check=True)
 
     # Train rotnet models.
+    print("Training rotnet models...")
     subprocess.run(["tools/train_rot.py", f"--cfg={args.cfg}"], check=True)
     subprocess.run(["tools/test_rot.py", f"--cfg={args.cfg}"], check=True)
 
     # Extract odometry.
+    print("Extracting odometry...")
     run_commands(
         [
             ["tools/test_odom.py", f"--cfg={args.cfg}", f"--npz_path={x}"]
@@ -95,6 +105,7 @@ if __name__ == "__main__":
     )
 
     # Train UNet
+    print("Training UNet...")
     subprocess.run(["tools/train_unet.py", f"--cfg={args.cfg}"], check=True)
     run_commands(
         [
@@ -106,6 +117,7 @@ if __name__ == "__main__":
 
     ### Run Cartographer.
     # Get ground truth.
+    print("Running Cartographer with ground truth...")
     subprocess.run(
         [
             "tools/run_carto.py",
@@ -119,6 +131,7 @@ if __name__ == "__main__":
     )
 
     # RadarHD baseline.
+    print("Running Cartographer with RadarHD baseline...")
     subprocess.run(
         [
             "tools/run_carto.py",
@@ -132,6 +145,7 @@ if __name__ == "__main__":
     )
 
     # RNIN + RadarHD baseline.
+    print("Running Cartographer with RNIN + RadarHD baseline...")
     subprocess.run(
         [
             "tools/run_carto.py",
@@ -145,6 +159,7 @@ if __name__ == "__main__":
     )
 
     # milliEgo + RadarHD baseline.
+    print("Running Cartographer with milliEgo + RadarHD baseline...")
     subprocess.run(
         [
             "tools/run_carto.py",
@@ -158,6 +173,7 @@ if __name__ == "__main__":
     )
 
     # Our odometry + RadarHD baseline.
+    print("Running Cartographer with our odometry + RadarHD baseline...")
     subprocess.run(
         [
             "tools/run_carto.py",
@@ -171,6 +187,7 @@ if __name__ == "__main__":
     )
 
     # Run radarize.
+    print("Running Cartographer with Radarize...")
     subprocess.run(
         [
             "tools/run_carto.py",
@@ -182,4 +199,3 @@ if __name__ == "__main__":
         ],
         check=True,
     )
-
