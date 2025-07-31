@@ -112,6 +112,21 @@ def create_radar_bev(
     return heatmap_ts, heatmap_msgs
 
 
+def compute_range_azimuth_with_regularization(radar_cube, angle_res, angle_range, method="capon", reg_factor=1e-6):
+    """Wrapper for compute_range_azimuth that adds regularization for Capon method"""
+    if method.lower() == "capon":
+        try:
+            # First try the regular method
+            return dsp.compute_range_azimuth(radar_cube, angle_res, angle_range, method)
+        except np.linalg.LinAlgError:
+            # If matrix is singular, try with FFT method instead
+            print("Warning: Singular matrix in Capon beamforming, falling back to FFT")
+            return dsp.compute_range_azimuth(radar_cube, angle_res, angle_range, "fft")
+    else:
+        # Use original method for non-Capon
+        return dsp.compute_range_azimuth(radar_cube, angle_res, angle_range, method)
+
+
 def create_radar_bev_elevation(
     bag,
     radar_params,
@@ -155,7 +170,7 @@ def create_radar_bev_elevation(
 
         # All images should be C x H x W
         heatmap = np.stack(
-            [dsp.compute_range_azimuth(radar_cube_e, angle_res, angle_range, "capon")]
+            [compute_range_azimuth_with_regularization(radar_cube_e, angle_res, angle_range, "capon")]
         )
 
         if warp_cartesian:

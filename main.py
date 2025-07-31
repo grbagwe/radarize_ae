@@ -36,13 +36,23 @@ def args():
 
 
 def run_commands(cmds, n_proc):
+    print(f"Running {len(cmds)} commands in parallel using {n_proc} processes")
+    
+    def run_with_output(cmd):
+        proc = subprocess.run(cmd, check=True, capture_output=True)
+        return proc
+    
     with multiprocessing.Pool(n_proc) as pool:
-        pool.map(subprocess.run, cmds)
+        results = pool.map(run_with_output, cmds)
+    
+    return results
 
 
 if __name__ == "__main__":
     args = args()
     update_config(cfg, args)
+    
+    print(f"\nRunning with {args.n_proc} processes (out of {multiprocessing.cpu_count()} available cores)")
 
     # Preprocess datasets. (bag -> npz)
     print("Preprocessing datasets...")
@@ -61,7 +71,7 @@ if __name__ == "__main__":
         print(f"  - Will process: {os.path.basename(process_file)}")
     
     if bag_paths:  # Only run if there are files to process
-        print("\nStarting conversion of .bag to .npz...")
+        print(f"\nStarting conversion of .bag to .npz with {args.n_proc} parallel processes...")
         run_commands(
             [
                 [f"tools/create_dataset.py", f"--cfg={args.cfg}", f"--bag_path={x}"]
@@ -90,7 +100,7 @@ if __name__ == "__main__":
     print("prepare training and testing datasets completed.")
 
     # Extract ground truth.
-    print("Extracting ground truth...")
+    print(f"Extracting ground truth with {args.n_proc} parallel processes...")
     run_commands(
         [
             ["tools/extract_gt.py", f"--cfg={args.cfg}", f"--npz_path={x}"]
@@ -103,16 +113,16 @@ if __name__ == "__main__":
 
     # Train flow models.
     print("Training flow models...")
-    subprocess.run(["tools/train_flow.py", f"--cfg={args.cfg}"], check=True)
-    subprocess.run(["tools/test_flow.py", f"--cfg={args.cfg}"], check=True)
+    subprocess.run(["tools/train_flow.py", f"--cfg={args.cfg}", f"--n_proc={args.n_proc}"], check=True)
+    subprocess.run(["tools/test_flow.py", f"--cfg={args.cfg}", f"--n_proc={args.n_proc}"], check=True)
 
     # Train rotnet models.
     print("Training rotnet models...")
-    subprocess.run(["tools/train_rot.py", f"--cfg={args.cfg}"], check=True)
-    subprocess.run(["tools/test_rot.py", f"--cfg={args.cfg}"], check=True)
+    subprocess.run(["tools/train_rot.py", f"--cfg={args.cfg}", f"--n_proc={args.n_proc}"], check=True)
+    subprocess.run(["tools/test_rot.py", f"--cfg={args.cfg}", f"--n_proc={args.n_proc}"], check=True)
 
     # Extract odometry.
-    print("Extracting odometry...")
+    print(f"Extracting odometry with {args.n_proc} parallel processes...")
     run_commands(
         [
             ["tools/test_odom.py", f"--cfg={args.cfg}", f"--npz_path={x}"]
@@ -123,7 +133,8 @@ if __name__ == "__main__":
 
     # Train UNet
     print("Training UNet...")
-    subprocess.run(["tools/train_unet.py", f"--cfg={args.cfg}"], check=True)
+    subprocess.run(["tools/train_unet.py", f"--cfg={args.cfg}", f"--n_proc={args.n_proc}"], check=True)
+    print(f"Testing UNet with {args.n_proc} parallel processes...")
     run_commands(
         [
             ["tools/test_unet.py", f"--cfg={args.cfg}", f"--npz_path={x}"]
@@ -132,14 +143,14 @@ if __name__ == "__main__":
         args.n_proc,
     )
 
-    ### Run Cartographer.
+    ### Run Cartographer with multiple processes
     # Get ground truth.
     print("Running Cartographer with ground truth...")
     subprocess.run(
         [
             "tools/run_carto.py",
             f"--cfg={args.cfg}",
-            f"--n_proc=1",
+            f"--n_proc={args.n_proc}",
             f"--odom=gt",
             f"--scan=gt",
             f"--params=default",
@@ -153,7 +164,7 @@ if __name__ == "__main__":
         [
             "tools/run_carto.py",
             f"--cfg={args.cfg}",
-            f"--n_proc=1",
+            f"--n_proc={args.n_proc}",
             f"--odom=gt",
             f"--scan=radarhd",
             f"--params=scan_only",
@@ -167,7 +178,7 @@ if __name__ == "__main__":
         [
             "tools/run_carto.py",
             f"--cfg={args.cfg}",
-            f"--n_proc=1",
+            f"--n_proc={args.n_proc}",
             f"--odom=rnin",
             f"--scan=radarhd",
             f"--params=default",
@@ -181,7 +192,7 @@ if __name__ == "__main__":
         [
             "tools/run_carto.py",
             f"--cfg={args.cfg}",
-            f"--n_proc=1",
+            f"--n_proc={args.n_proc}",
             f"--odom=milliego",
             f"--scan=radarhd",
             f"--params=default",
@@ -195,7 +206,7 @@ if __name__ == "__main__":
         [
             "tools/run_carto.py",
             f"--cfg={args.cfg}",
-            f"--n_proc=1",
+            f"--n_proc={args.n_proc}",
             f"--odom=odometry",
             f"--scan=radarhd",
             f"--params=radar",
@@ -209,7 +220,7 @@ if __name__ == "__main__":
         [
             "tools/run_carto.py",
             f"--cfg={args.cfg}",
-            f"--n_proc=1",
+            f"--n_proc={args.n_proc}",
             f"--odom=odometry",
             f"--scan=unet",
             f"--params=radar",
