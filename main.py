@@ -46,15 +46,32 @@ if __name__ == "__main__":
 
     # Preprocess datasets. (bag -> npz)
     print("Preprocessing datasets...")
-    bag_paths = sorted(glob.glob(os.path.join(cfg["DATASET"]["PATH"], "*.bag")))
-    bag_paths = [x for x in bag_paths if not os.path.exists(x.replace(".bag", ".npz"))]
-    run_commands(
-        [
-            [f"tools/create_dataset.py", f"--cfg={args.cfg}", f"--bag_path={x}"]
-            for x in bag_paths
-        ],
-        args.n_proc,
-    )
+    all_bag_paths = sorted(glob.glob(os.path.join(cfg["DATASET"]["PATH"], "*.bag")))
+    print(f"Found {len(all_bag_paths)} .bag files in total")
+    
+    bag_paths = [x for x in all_bag_paths if not os.path.exists(x.replace(".bag", ".npz"))]
+    skipped_paths = [x for x in all_bag_paths if os.path.exists(x.replace(".bag", ".npz"))]
+    
+    print(f"\nSkipping {len(skipped_paths)} already processed files:")
+    for skip_file in skipped_paths:
+        print(f"  - Skipping: {os.path.basename(skip_file)} (already has .npz)")
+    
+    print(f"\nProcessing {len(bag_paths)} new files:")
+    for process_file in bag_paths:
+        print(f"  - Will process: {os.path.basename(process_file)}")
+    
+    if bag_paths:  # Only run if there are files to process
+        print("\nStarting conversion of .bag to .npz...")
+        run_commands(
+            [
+                [f"tools/create_dataset.py", f"--cfg={args.cfg}", f"--bag_path={x}"]
+                for x in bag_paths
+            ],
+            args.n_proc,
+        )
+    else:
+        print("\nNo new files to process!")
+    
     print("Dataset preprocessing completed.")
 
     print("Preparing training and testing datasets...")
