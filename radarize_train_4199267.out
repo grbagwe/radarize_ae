@@ -1,0 +1,94 @@
+Running configs/main_0.yaml
+Processing data/all/bot_beckman_5thfloor_3.bag...
+pose_gt (1313,)
+velo_gt (1313,)
+depth_map (5973,)
+depth_map_u (5973,)
+pcd_map (1800,)
+radar_d (1798,)
+radar_de (1798,)
+radar_r_1 (1800,)
+radar_r_3 (1798,)
+radar_r_5 (1796,)
+radar_re_1 (1800,)
+radar_re_3 (1798,)
+radar_re_5 (1796,)
+imu (11973,)
+pose_gt (1798, 7) float64
+velo_gt (1798, 3) float64
+depth_map (1798, 1, 96, 88) uint8
+depth_map_u (1798, 1, 96, 704) uint8
+pcd_map (1798, 1, 96, 88) uint8
+radar_d (1798, 1, 60, 181) float32
+radar_de (1798, 1, 60, 181) float32
+radar_r_1 (1798, 1, 96, 88) float64
+radar_r_3 (1798, 1, 96, 88) float64
+radar_r_5 (1798, 1, 96, 88) float64
+radar_re_1 (1798, 1, 96, 88) float64
+radar_re_3 (1798, 1, 96, 88) float64
+radar_re_5 (1798, 1, 96, 88) float64
+imu (1798, 6) float64
+time (1798,) float64
+Processing data/all/bot_beckman_5thfloor_4.bag...
+pose_gt (1318,)
+velo_gt (1318,)
+depth_map (5976,)
+depth_map_u (5976,)
+pcd_map (1769,)
+radar_d (1798,)
+radar_de (1798,)
+radar_r_1 (1800,)
+radar_r_3 (1798,)
+radar_r_5 (1796,)
+radar_re_1 (1800,)
+radar_re_3 (1798,)
+radar_re_5 (1796,)
+imu (11972,)
+pose_gt (1798, 7) float64
+velo_gt (1798, 3) float64
+depth_map (1798, 1, 96, 88) uint8
+depth_map_u (1798, 1, 96, 704) uint8
+pcd_map (1798, 1, 96, 88) uint8
+radar_d (1798, 1, 60, 181) float32
+radar_de (1798, 1, 60, 181) float32
+radar_r_1 (1798, 1, 96, 88) float64
+radar_r_3 (1798, 1, 96, 88) float64
+radar_r_5 (1798, 1, 96, 88) float64
+radar_re_1 (1798, 1, 96, 88) float64
+radar_re_3 (1798, 1, 96, 88) float64
+radar_re_5 (1798, 1, 96, 88) float64
+imu (1798, 6) float64
+time (1798,) float64
+Processing data/all/bot_beckman_basement_0.bag...
+pose_gt (1302,)
+velo_gt (1302,)
+depth_map (5326,)
+depth_map_u (5326,)
+pcd_map (1776,)
+radar_d (1776,)
+radar_de (1776,)
+radar_r_1 (1778,)
+radar_r_3 (1776,)
+radar_r_5 (1774,)
+radar_re_1 (1778,)
+radar_re_3 (1776,)
+radar_re_5 (1774,)
+imu (11916,)
+pose_gt (1776, 7) float64
+velo_gt (1776, 3) float64
+depth_map (1776, 1, 96, 88) uint8
+depth_map_u (1776, 1, 96, 704) uint8
+pcd_map (1776, 1, 96, 88) uint8
+radar_d (1776, 1, 60, 181) float32
+radar_de (1776, 1, 60, 181) float32
+radar_r_1 (1776, 1, 96, 88) float64
+radar_r_3 (1776, 1, 96, 88) float64
+radar_r_5 (1776, 1, 96, 88) float64
+radar_re_1 (1776, 1, 96, 88) float64
+radar_re_3 (1776, 1, 96, 88) float64
+radar_re_5 (1776, 1, 96, 88) float64
+imu (1776, 6) float64
+time (1776,) float64
+Processing data/all/bot_beckman_basement_1.bag...
+Processing data/all/bot_beckman_basement_2.bag...
+Processing data/all/bot_beckman_basement_3.bag...

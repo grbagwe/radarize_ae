@@ -41,8 +41,10 @@ def args():
 if __name__ == "__main__":
     args = args()
     update_config(cfg, args)
+    
 
     device = torch.device("cpu" if args.no_cuda else "cuda")
+    print(" \n \n \n ************************** \n \n \n using " , device) 
 
     # Load Trained NN
     saved_model = torch.load(

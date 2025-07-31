@@ -1,0 +1,814 @@
+Running configs/main_0.yaml
+Processing data/all/bot_beckman_basement_1.bag...
+Processing data/all/bot_beckman_basement_2.bag...
+Processing data/all/bot_csl_basement_1.bag...
+Processing data/all/bot_csl_basement_2.bag...
+pose_gt (1306,)
+velo_gt (1306,)
+depth_map (5598,)
+depth_map_u (5598,)
+pcd_map (1796,)
+radar_d (1798,)
+radar_de (1798,)
+radar_r_1 (1800,)
+radar_r_3 (1798,)
+radar_r_5 (1796,)
+radar_re_1 (1800,)
+radar_re_3 (1798,)
+radar_re_5 (1796,)
+imu (11968,)
+pose_gt (1797, 7) float64
+velo_gt (1797, 3) float64
+depth_map (1797, 1, 96, 88) uint8
+depth_map_u (1797, 1, 96, 704) uint8
+pcd_map (1797, 1, 96, 88) uint8
+radar_d (1797, 1, 60, 181) float32
+radar_de (1797, 1, 60, 181) float32
+radar_r_1 (1797, 1, 96, 88) float64
+radar_r_3 (1797, 1, 96, 88) float64
+radar_r_5 (1797, 1, 96, 88) float64
+radar_re_1 (1797, 1, 96, 88) float64
+radar_re_3 (1797, 1, 96, 88) float64
+radar_re_5 (1797, 1, 96, 88) float64
+imu (1797, 6) float64
+time (1797,) float64
+Processing data/all/bot_csl_basement_3.bag...
+pose_gt (1288,)
+velo_gt (1288,)
+depth_map (4971,)
+depth_map_u (4971,)
+pcd_map (1797,)
+radar_d (1798,)
+radar_de (1798,)
+radar_r_1 (1800,)
+radar_r_3 (1798,)
+radar_r_5 (1796,)
+radar_re_1 (1800,)
+radar_re_3 (1798,)
+radar_re_5 (1796,)
+imu (11974,)
+pose_gt (1798, 7) float64
+velo_gt (1798, 3) float64
+depth_map (1798, 1, 96, 88) uint8
+depth_map_u (1798, 1, 96, 704) uint8
+pcd_map (1798, 1, 96, 88) uint8
+radar_d (1798, 1, 60, 181) float32
+radar_de (1798, 1, 60, 181) float32
+radar_r_1 (1798, 1, 96, 88) float64
+radar_r_3 (1798, 1, 96, 88) float64
+radar_r_5 (1798, 1, 96, 88) float64
+radar_re_1 (1798, 1, 96, 88) float64
+radar_re_3 (1798, 1, 96, 88) float64
+radar_re_5 (1798, 1, 96, 88) float64
+imu (1798, 6) float64
+time (1798,) float64
+Processing data/all/bot_csl_basement_4.bag...
+pose_gt (1292,)
+velo_gt (1292,)
+depth_map (5006,)
+depth_map_u (5006,)
+pcd_map (1731,)
+radar_d (1798,)
+radar_de (1798,)
+radar_r_1 (1800,)
+radar_r_3 (1798,)
+radar_r_5 (1796,)
+radar_re_1 (1800,)
+radar_re_3 (1798,)
+radar_re_5 (1796,)
+imu (11974,)
+pose_gt (1798, 7) float64
+velo_gt (1798, 3) float64
+depth_map (1798, 1, 96, 88) uint8
+depth_map_u (1798, 1, 96, 704) uint8
+pcd_map (1798, 1, 96, 88) uint8
+radar_d (1798, 1, 60, 181) float32
+radar_de (1798, 1, 60, 181) float32
+radar_r_1 (1798, 1, 96, 88) float64
+radar_r_3 (1798, 1, 96, 88) float64
+radar_r_5 (1798, 1, 96, 88) float64
+radar_re_1 (1798, 1, 96, 88) float64
+radar_re_3 (1798, 1, 96, 88) float64
+radar_re_5 (1798, 1, 96, 88) float64
+imu (1798, 6) float64
+time (1798,) float64
+Processing data/all/bot_csl_basement_hall.bag...
+pose_gt (3497,)
+velo_gt (3497,)
+depth_map (15396,)
+depth_map_u (15396,)
+pcd_map (4787,)
+radar_d (4787,)
+radar_de (4787,)
+radar_r_1 (4789,)
+radar_r_3 (4787,)
+radar_r_5 (4785,)
+radar_re_1 (4789,)
+radar_re_3 (4787,)
+radar_re_5 (4785,)
+imu (31874,)
+pose_gt (4787, 7) float64
+velo_gt (4787, 3) float64
+depth_map (4787, 1, 96, 88) uint8
+depth_map_u (4787, 1, 96, 704) uint8
+pcd_map (4787, 1, 96, 88) uint8
+radar_d (4787, 1, 60, 181) float32
+radar_de (4787, 1, 60, 181) float32
+radar_r_1 (4787, 1, 96, 88) float64
+radar_r_3 (4787, 1, 96, 88) float64
+radar_r_5 (4787, 1, 96, 88) float64
+radar_re_1 (4787, 1, 96, 88) float64
+radar_re_3 (4787, 1, 96, 88) float64
+radar_re_5 (4787, 1, 96, 88) float64
+imu (4787, 6) float64
+time (4787,) float64
+Processing data/all/bot_ece_5thfloor_0.bag...
+pose_gt (1314,)
+velo_gt (1314,)
+depth_map (5932,)
+depth_map_u (5932,)
+pcd_map (1778,)
+radar_d (1780,)
+radar_de (1780,)
+radar_r_1 (1782,)
+radar_r_3 (1780,)
+radar_r_5 (1778,)
+radar_re_1 (1782,)
+radar_re_3 (1780,)
+radar_re_5 (1778,)
+imu (11919,)
+pose_gt (1780, 7) float64
+velo_gt (1780, 3) float64
+depth_map (1780, 1, 96, 88) uint8
+depth_map_u (1780, 1, 96, 704) uint8
+pcd_map (1780, 1, 96, 88) uint8
+radar_d (1780, 1, 60, 181) float32
+radar_de (1780, 1, 60, 181) float32
+radar_r_1 (1780, 1, 96, 88) float64
+radar_r_3 (1780, 1, 96, 88) float64
+radar_r_5 (1780, 1, 96, 88) float64
+radar_re_1 (1780, 1, 96, 88) float64
+radar_re_3 (1780, 1, 96, 88) float64
+radar_re_5 (1780, 1, 96, 88) float64
+imu (1780, 6) float64
+time (1780,) float64
+Processing data/all/bot_ece_5thfloor_1.bag...
+pose_gt (1318,)
+velo_gt (1318,)
+depth_map (5923,)
+depth_map_u (5923,)
+pcd_map (1799,)
+radar_d (1798,)
+radar_de (1798,)
+radar_r_1 (1800,)
+radar_r_3 (1798,)
+radar_r_5 (1796,)
+radar_re_1 (1800,)
+radar_re_3 (1798,)
+radar_re_5 (1796,)
+imu (11972,)
+pose_gt (1798, 7) float64
+velo_gt (1798, 3) float64
+depth_map (1798, 1, 96, 88) uint8
+depth_map_u (1798, 1, 96, 704) uint8
+pcd_map (1798, 1, 96, 88) uint8
+radar_d (1798, 1, 60, 181) float32
+radar_de (1798, 1, 60, 181) float32
+radar_r_1 (1798, 1, 96, 88) float64
+radar_r_3 (1798, 1, 96, 88) float64
+radar_r_5 (1798, 1, 96, 88) float64
+radar_re_1 (1798, 1, 96, 88) float64
+radar_re_3 (1798, 1, 96, 88) float64
+radar_re_5 (1798, 1, 96, 88) float64
+imu (1798, 6) float64
+time (1798,) float64
+Processing data/all/bot_ece_5thfloor_2.bag...
+pose_gt (1317,)
+velo_gt (1317,)
+depth_map (5899,)
+depth_map_u (5899,)
+pcd_map (1800,)
+radar_d (1798,)
+radar_de (1798,)
+radar_r_1 (1800,)
+radar_r_3 (1798,)
+radar_r_5 (1796,)
+radar_re_1 (1800,)
+radar_re_3 (1798,)
+radar_re_5 (1796,)
+imu (11969,)
+pose_gt (1798, 7) float64
+velo_gt (1798, 3) float64
+depth_map (1798, 1, 96, 88) uint8
+depth_map_u (1798, 1, 96, 704) uint8
+pcd_map (1798, 1, 96, 88) uint8
+radar_d (1798, 1, 60, 181) float32
+radar_de (1798, 1, 60, 181) float32
+radar_r_1 (1798, 1, 96, 88) float64
+radar_r_3 (1798, 1, 96, 88) float64
+radar_r_5 (1798, 1, 96, 88) float64
+radar_re_1 (1798, 1, 96, 88) float64
+radar_re_3 (1798, 1, 96, 88) float64
+radar_re_5 (1798, 1, 96, 88) float64
+imu (1798, 6) float64
+time (1798,) float64
+Processing data/all/bot_ece_5thfloor_3.bag...
+pose_gt (1317,)
+velo_gt (1317,)
+depth_map (5914,)
+depth_map_u (5914,)
+pcd_map (1794,)
+radar_d (1798,)
+radar_de (1798,)
+radar_r_1 (1800,)
+radar_r_3 (1798,)
+radar_r_5 (1796,)
+radar_re_1 (1800,)
+radar_re_3 (1798,)
+radar_re_5 (1796,)
+imu (11970,)
+pose_gt (1797, 7) float64
+velo_gt (1797, 3) float64
+depth_map (1797, 1, 96, 88) uint8
+depth_map_u (1797, 1, 96, 704) uint8
+pcd_map (1797, 1, 96, 88) uint8
+radar_d (1797, 1, 60, 181) float32
+radar_de (1797, 1, 60, 181) float32
+radar_r_1 (1797, 1, 96, 88) float64
+radar_r_3 (1797, 1, 96, 88) float64
+radar_r_5 (1797, 1, 96, 88) float64
+radar_re_1 (1797, 1, 96, 88) float64
+radar_re_3 (1797, 1, 96, 88) float64
+radar_re_5 (1797, 1, 96, 88) float64
+imu (1797, 6) float64
+time (1797,) float64
+Processing data/all/bot_ece_5thfloor_4.bag...
+pose_gt (1317,)
+velo_gt (1317,)
+depth_map (5916,)
+depth_map_u (5916,)
+pcd_map (1800,)
+radar_d (1798,)
+radar_de (1798,)
+radar_r_1 (1800,)
+radar_r_3 (1798,)
+radar_r_5 (1796,)
+radar_re_1 (1800,)
+radar_re_3 (1798,)
+radar_re_5 (1796,)
+imu (11972,)
+pose_gt (1798, 7) float64
+velo_gt (1798, 3) float64
+depth_map (1798, 1, 96, 88) uint8
+depth_map_u (1798, 1, 96, 704) uint8
+pcd_map (1798, 1, 96, 88) uint8
+radar_d (1798, 1, 60, 181) float32
+radar_de (1798, 1, 60, 181) float32
+radar_r_1 (1798, 1, 96, 88) float64
+radar_r_3 (1798, 1, 96, 88) float64
+radar_r_5 (1798, 1, 96, 88) float64
+radar_re_1 (1798, 1, 96, 88) float64
+radar_re_3 (1798, 1, 96, 88) float64
+radar_re_5 (1798, 1, 96, 88) float64
+imu (1798, 6) float64
+time (1798,) float64
+Processing data/all/bot_ece_basement_0.bag...
+pose_gt (1312,)
+velo_gt (1312,)
+depth_map (5931,)
+depth_map_u (5931,)
+pcd_map (1783,)
+radar_d (1784,)
+radar_de (1784,)
+radar_r_1 (1786,)
+radar_r_3 (1784,)
+radar_r_5 (1782,)
+radar_re_1 (1786,)
+radar_re_3 (1784,)
+radar_re_5 (1782,)
+imu (11921,)
+pose_gt (1784, 7) float64
+velo_gt (1784, 3) float64
+depth_map (1784, 1, 96, 88) uint8
+depth_map_u (1784, 1, 96, 704) uint8
+pcd_map (1784, 1, 96, 88) uint8
+radar_d (1784, 1, 60, 181) float32
+radar_de (1784, 1, 60, 181) float32
+radar_r_1 (1784, 1, 96, 88) float64
+radar_r_3 (1784, 1, 96, 88) float64
+radar_r_5 (1784, 1, 96, 88) float64
+radar_re_1 (1784, 1, 96, 88) float64
+radar_re_3 (1784, 1, 96, 88) float64
+radar_re_5 (1784, 1, 96, 88) float64
+imu (1784, 6) float64
+time (1784,) float64
+Processing data/all/bot_ece_basement_1.bag...
+pose_gt (1314,)
+velo_gt (1314,)
+depth_map (5943,)
+depth_map_u (5943,)
+pcd_map (1800,)
+radar_d (1798,)
+radar_de (1798,)
+radar_r_1 (1800,)
+radar_r_3 (1798,)
+radar_r_5 (1796,)
+radar_re_1 (1800,)
+radar_re_3 (1798,)
+radar_re_5 (1796,)
+imu (11972,)
+pose_gt (1798, 7) float64
+velo_gt (1798, 3) float64
+depth_map (1798, 1, 96, 88) uint8
+depth_map_u (1798, 1, 96, 704) uint8
+pcd_map (1798, 1, 96, 88) uint8
+radar_d (1798, 1, 60, 181) float32
+radar_de (1798, 1, 60, 181) float32
+radar_r_1 (1798, 1, 96, 88) float64
+radar_r_3 (1798, 1, 96, 88) float64
+radar_r_5 (1798, 1, 96, 88) float64
+radar_re_1 (1798, 1, 96, 88) float64
+radar_re_3 (1798, 1, 96, 88) float64
+radar_re_5 (1798, 1, 96, 88) float64
+imu (1798, 6) float64
+time (1798,) float64
+Processing data/all/bot_ece_basement_2.bag...
+pose_gt (1314,)
+velo_gt (1314,)
+depth_map (5956,)
+depth_map_u (5956,)
+pcd_map (1800,)
+radar_d (1798,)
+radar_de (1798,)
+radar_r_1 (1800,)
+radar_r_3 (1798,)
+radar_r_5 (1796,)
+radar_re_1 (1800,)
+radar_re_3 (1798,)
+radar_re_5 (1796,)
+imu (11968,)
+pose_gt (1795, 7) float64
+velo_gt (1795, 3) float64
+depth_map (1795, 1, 96, 88) uint8
+depth_map_u (1795, 1, 96, 704) uint8
+pcd_map (1795, 1, 96, 88) uint8
+radar_d (1795, 1, 60, 181) float32
+radar_de (1795, 1, 60, 181) float32
+radar_r_1 (1795, 1, 96, 88) float64
+radar_r_3 (1795, 1, 96, 88) float64
+radar_r_5 (1795, 1, 96, 88) float64
+radar_re_1 (1795, 1, 96, 88) float64
+radar_re_3 (1795, 1, 96, 88) float64
+radar_re_5 (1795, 1, 96, 88) float64
+imu (1795, 6) float64
+time (1795,) float64
+Processing data/all/bot_ece_basement_3.bag...
+pose_gt (1315,)
+velo_gt (1315,)
+depth_map (5935,)
+depth_map_u (5935,)
+pcd_map (1779,)
+radar_d (1798,)
+radar_de (1798,)
+radar_r_1 (1800,)
+radar_r_3 (1798,)
+radar_r_5 (1796,)
+radar_re_1 (1800,)
+radar_re_3 (1798,)
+radar_re_5 (1796,)
+imu (11972,)
+pose_gt (1798, 7) float64
+velo_gt (1798, 3) float64
+depth_map (1798, 1, 96, 88) uint8
+depth_map_u (1798, 1, 96, 704) uint8
+pcd_map (1798, 1, 96, 88) uint8
+radar_d (1798, 1, 60, 181) float32
+radar_de (1798, 1, 60, 181) float32
+radar_r_1 (1798, 1, 96, 88) float64
+radar_r_3 (1798, 1, 96, 88) float64
+radar_r_5 (1798, 1, 96, 88) float64
+radar_re_1 (1798, 1, 96, 88) float64
+radar_re_3 (1798, 1, 96, 88) float64
+radar_re_5 (1798, 1, 96, 88) float64
+imu (1798, 6) float64
+time (1798,) float64
+Processing data/all/bot_ece_basement_4.bag...
+pose_gt (1316,)
+velo_gt (1316,)
+depth_map (5966,)
+depth_map_u (5966,)
+pcd_map (1799,)
+radar_d (1798,)
+radar_de (1798,)
+radar_r_1 (1800,)
+radar_r_3 (1798,)
+radar_r_5 (1796,)
+radar_re_1 (1800,)
+radar_re_3 (1798,)
+radar_re_5 (1796,)
+imu (11972,)
+pose_gt (1796, 7) float64
+velo_gt (1796, 3) float64
+depth_map (1796, 1, 96, 88) uint8
+depth_map_u (1796, 1, 96, 704) uint8
+pcd_map (1796, 1, 96, 88) uint8
+radar_d (1796, 1, 60, 181) float32
+radar_de (1796, 1, 60, 181) float32
+radar_r_1 (1796, 1, 96, 88) float64
+radar_r_3 (1796, 1, 96, 88) float64
+radar_r_5 (1796, 1, 96, 88) float64
+radar_re_1 (1796, 1, 96, 88) float64
+radar_re_3 (1796, 1, 96, 88) float64
+radar_re_5 (1796, 1, 96, 88) float64
+imu (1796, 6) float64
+time (1796,) float64
+Processing data/all/bot_ece_basement_5.bag...
+pose_gt (1312,)
+velo_gt (1312,)
+depth_map (5854,)
+depth_map_u (5854,)
+pcd_map (1761,)
+radar_d (1798,)
+radar_de (1798,)
+radar_r_1 (1800,)
+radar_r_3 (1798,)
+radar_r_5 (1796,)
+radar_re_1 (1800,)
+radar_re_3 (1798,)
+radar_re_5 (1796,)
+imu (11970,)
+pose_gt (1798, 7) float64
+velo_gt (1798, 3) float64
+depth_map (1798, 1, 96, 88) uint8
+depth_map_u (1798, 1, 96, 704) uint8
+pcd_map (1798, 1, 96, 88) uint8
+radar_d (1798, 1, 60, 181) float32
+radar_de (1798, 1, 60, 181) float32
+radar_r_1 (1798, 1, 96, 88) float64
+radar_r_3 (1798, 1, 96, 88) float64
+radar_r_5 (1798, 1, 96, 88) float64
+radar_re_1 (1798, 1, 96, 88) float64
+radar_re_3 (1798, 1, 96, 88) float64
+radar_re_5 (1798, 1, 96, 88) float64
+imu (1798, 6) float64
+time (1798,) float64
+Processing data/all/bot_ece_basement_6.bag...
+pose_gt (1315,)
+velo_gt (1315,)
+depth_map (5877,)
+depth_map_u (5877,)
+pcd_map (1799,)
+radar_d (1798,)
+radar_de (1798,)
+radar_r_1 (1800,)
+radar_r_3 (1798,)
+radar_r_5 (1796,)
+radar_re_1 (1800,)
+radar_re_3 (1798,)
+radar_re_5 (1796,)
+imu (11971,)
+pose_gt (1798, 7) float64
+velo_gt (1798, 3) float64
+depth_map (1798, 1, 96, 88) uint8
+depth_map_u (1798, 1, 96, 704) uint8
+pcd_map (1798, 1, 96, 88) uint8
+radar_d (1798, 1, 60, 181) float32
+radar_de (1798, 1, 60, 181) float32
+radar_r_1 (1798, 1, 96, 88) float64
+radar_r_3 (1798, 1, 96, 88) float64
+radar_r_5 (1798, 1, 96, 88) float64
+radar_re_1 (1798, 1, 96, 88) float64
+radar_re_3 (1798, 1, 96, 88) float64
+radar_re_5 (1798, 1, 96, 88) float64
+imu (1798, 6) float64
+time (1798,) float64
+Processing data/all/bot_ece_basement_7.bag...
+pose_gt (1313,)
+velo_gt (1313,)
+depth_map (5816,)
+depth_map_u (5816,)
+pcd_map (1795,)
+radar_d (1798,)
+radar_de (1798,)
+radar_r_1 (1800,)
+radar_r_3 (1798,)
+radar_r_5 (1796,)
+radar_re_1 (1800,)
+radar_re_3 (1798,)
+radar_re_5 (1796,)
+imu (11968,)
+pose_gt (1798, 7) float64
+velo_gt (1798, 3) float64
+depth_map (1798, 1, 96, 88) uint8
+depth_map_u (1798, 1, 96, 704) uint8
+pcd_map (1798, 1, 96, 88) uint8
+radar_d (1798, 1, 60, 181) float32
+radar_de (1798, 1, 60, 181) float32
+radar_r_1 (1798, 1, 96, 88) float64
+radar_r_3 (1798, 1, 96, 88) float64
+radar_r_5 (1798, 1, 96, 88) float64
+radar_re_1 (1798, 1, 96, 88) float64
+radar_re_3 (1798, 1, 96, 88) float64
+radar_re_5 (1798, 1, 96, 88) float64
+imu (1798, 6) float64
+time (1798,) float64
+Processing data/all/bot_ece_basement_8.bag...
+pose_gt (1315,)
+velo_gt (1315,)
+depth_map (5743,)
+depth_map_u (5743,)
+pcd_map (1799,)
+radar_d (1798,)
+radar_de (1798,)
+radar_r_1 (1800,)
+radar_r_3 (1798,)
+radar_r_5 (1796,)
+radar_re_1 (1800,)
+radar_re_3 (1798,)
+radar_re_5 (1796,)
+imu (11973,)
+pose_gt (1798, 7) float64
+velo_gt (1798, 3) float64
+depth_map (1798, 1, 96, 88) uint8
+depth_map_u (1798, 1, 96, 704) uint8
+pcd_map (1798, 1, 96, 88) uint8
+radar_d (1798, 1, 60, 181) float32
+radar_de (1798, 1, 60, 181) float32
+radar_r_1 (1798, 1, 96, 88) float64
+radar_r_3 (1798, 1, 96, 88) float64
+radar_r_5 (1798, 1, 96, 88) float64
+radar_re_1 (1798, 1, 96, 88) float64
+radar_re_3 (1798, 1, 96, 88) float64
+radar_re_5 (1798, 1, 96, 88) float64
+imu (1798, 6) float64
+time (1798,) float64
+Processing data/all/bot_ece_basement_9.bag...
+pose_gt (1315,)
+velo_gt (1315,)
+depth_map (5785,)
+depth_map_u (5785,)
+pcd_map (1795,)
+radar_d (1798,)
+radar_de (1798,)
+radar_r_1 (1800,)
+radar_r_3 (1798,)
+radar_r_5 (1796,)
+radar_re_1 (1800,)
+radar_re_3 (1798,)
+radar_re_5 (1796,)
+imu (11968,)
+pose_gt (1796, 7) float64
+velo_gt (1796, 3) float64
+depth_map (1796, 1, 96, 88) uint8
+depth_map_u (1796, 1, 96, 704) uint8
+pcd_map (1796, 1, 96, 88) uint8
+radar_d (1796, 1, 60, 181) float32
+radar_de (1796, 1, 60, 181) float32
+radar_r_1 (1796, 1, 96, 88) float64
+radar_r_3 (1796, 1, 96, 88) float64
+radar_r_5 (1796, 1, 96, 88) float64
+radar_re_1 (1796, 1, 96, 88) float64
+radar_re_3 (1796, 1, 96, 88) float64
+radar_re_5 (1796, 1, 96, 88) float64
+imu (1796, 6) float64
+time (1796,) float64
+Processing data/all/bot_sc_4thfloor_0.bag...
+pose_gt (1313,)
+velo_gt (1313,)
+depth_map (5898,)
+depth_map_u (5898,)
+pcd_map (1785,)
+radar_d (1786,)
+radar_de (1786,)
+radar_r_1 (1788,)
+radar_r_3 (1786,)
+radar_r_5 (1784,)
+radar_re_1 (1788,)
+radar_re_3 (1786,)
+radar_re_5 (1784,)
+imu (11920,)
+pose_gt (1786, 7) float64
+velo_gt (1786, 3) float64
+depth_map (1786, 1, 96, 88) uint8
+depth_map_u (1786, 1, 96, 704) uint8
+pcd_map (1786, 1, 96, 88) uint8
+radar_d (1786, 1, 60, 181) float32
+radar_de (1786, 1, 60, 181) float32
+radar_r_1 (1786, 1, 96, 88) float64
+radar_r_3 (1786, 1, 96, 88) float64
+radar_r_5 (1786, 1, 96, 88) float64
+radar_re_1 (1786, 1, 96, 88) float64
+radar_re_3 (1786, 1, 96, 88) float64
+radar_re_5 (1786, 1, 96, 88) float64
+imu (1786, 6) float64
+time (1786,) float64
+Processing data/all/bot_sc_4thfloor_1.bag...
+pose_gt (1315,)
+velo_gt (1315,)
+depth_map (5907,)
+depth_map_u (5907,)
+pcd_map (1801,)
+radar_d (1798,)
+radar_de (1798,)
+radar_r_1 (1800,)
+radar_r_3 (1798,)
+radar_r_5 (1796,)
+radar_re_1 (1800,)
+radar_re_3 (1798,)
+radar_re_5 (1796,)
+imu (11973,)
+pose_gt (1798, 7) float64
+velo_gt (1798, 3) float64
+depth_map (1798, 1, 96, 88) uint8
+depth_map_u (1798, 1, 96, 704) uint8
+pcd_map (1798, 1, 96, 88) uint8
+radar_d (1798, 1, 60, 181) float32
+radar_de (1798, 1, 60, 181) float32
+radar_r_1 (1798, 1, 96, 88) float64
+radar_r_3 (1798, 1, 96, 88) float64
+radar_r_5 (1798, 1, 96, 88) float64
+radar_re_1 (1798, 1, 96, 88) float64
+radar_re_3 (1798, 1, 96, 88) float64
+radar_re_5 (1798, 1, 96, 88) float64
+imu (1798, 6) float64
+time (1798,) float64
+Processing data/all/bot_sc_4thfloor_2.bag...
+pose_gt (1313,)
+velo_gt (1313,)
+depth_map (5941,)
+depth_map_u (5941,)
+pcd_map (1800,)
+radar_d (1798,)
+radar_de (1798,)
+radar_r_1 (1800,)
+radar_r_3 (1798,)
+radar_r_5 (1796,)
+radar_re_1 (1800,)
+radar_re_3 (1798,)
+radar_re_5 (1796,)
+imu (11973,)
+pose_gt (1798, 7) float64
+velo_gt (1798, 3) float64
+depth_map (1798, 1, 96, 88) uint8
+depth_map_u (1798, 1, 96, 704) uint8
+pcd_map (1798, 1, 96, 88) uint8
+radar_d (1798, 1, 60, 181) float32
+radar_de (1798, 1, 60, 181) float32
+radar_r_1 (1798, 1, 96, 88) float64
+radar_r_3 (1798, 1, 96, 88) float64
+radar_r_5 (1798, 1, 96, 88) float64
+radar_re_1 (1798, 1, 96, 88) float64
+radar_re_3 (1798, 1, 96, 88) float64
+radar_re_5 (1798, 1, 96, 88) float64
+imu (1798, 6) float64
+time (1798,) float64
+Processing data/all/bot_sc_4thfloor_3.bag...
+pose_gt (1317,)
+velo_gt (1317,)
+depth_map (5951,)
+depth_map_u (5951,)
+pcd_map (1715,)
+radar_d (1798,)
+radar_de (1798,)
+radar_r_1 (1800,)
+radar_r_3 (1798,)
+radar_r_5 (1796,)
+radar_re_1 (1800,)
+radar_re_3 (1798,)
+radar_re_5 (1796,)
+imu (11969,)
+pose_gt (1798, 7) float64
+velo_gt (1798, 3) float64
+depth_map (1798, 1, 96, 88) uint8
+depth_map_u (1798, 1, 96, 704) uint8
+pcd_map (1798, 1, 96, 88) uint8
+radar_d (1798, 1, 60, 181) float32
+radar_de (1798, 1, 60, 181) float32
+radar_r_1 (1798, 1, 96, 88) float64
+radar_r_3 (1798, 1, 96, 88) float64
+radar_r_5 (1798, 1, 96, 88) float64
+radar_re_1 (1798, 1, 96, 88) float64
+radar_re_3 (1798, 1, 96, 88) float64
+radar_re_5 (1798, 1, 96, 88) float64
+imu (1798, 6) float64
+time (1798,) float64
+Processing data/all/bot_sc_basement_0.bag...
+pose_gt (1314,)
+velo_gt (1314,)
+depth_map (5948,)
+depth_map_u (5948,)
+pcd_map (1786,)
+radar_d (1786,)
+radar_de (1786,)
+radar_r_1 (1788,)
+radar_r_3 (1786,)
+radar_r_5 (1784,)
+radar_re_1 (1788,)
+radar_re_3 (1786,)
+radar_re_5 (1784,)
+imu (11920,)
+pose_gt (1786, 7) float64
+velo_gt (1786, 3) float64
+depth_map (1786, 1, 96, 88) uint8
+depth_map_u (1786, 1, 96, 704) uint8
+pcd_map (1786, 1, 96, 88) uint8
+radar_d (1786, 1, 60, 181) float32
+radar_de (1786, 1, 60, 181) float32
+radar_r_1 (1786, 1, 96, 88) float64
+radar_r_3 (1786, 1, 96, 88) float64
+radar_r_5 (1786, 1, 96, 88) float64
+radar_re_1 (1786, 1, 96, 88) float64
+radar_re_3 (1786, 1, 96, 88) float64
+radar_re_5 (1786, 1, 96, 88) float64
+imu (1786, 6) float64
+time (1786,) float64
+Processing data/all/bot_sc_basement_1.bag...
+pose_gt (1301,)
+velo_gt (1301,)
+depth_map (5904,)
+depth_map_u (5904,)
+pcd_map (1789,)
+radar_d (1789,)
+radar_de (1789,)
+radar_r_1 (1791,)
+radar_r_3 (1789,)
+radar_r_5 (1787,)
+radar_re_1 (1791,)
+radar_re_3 (1789,)
+radar_re_5 (1787,)
+imu (11915,)
+pose_gt (1789, 7) float64
+velo_gt (1789, 3) float64
+depth_map (1789, 1, 96, 88) uint8
+depth_map_u (1789, 1, 96, 704) uint8
+pcd_map (1789, 1, 96, 88) uint8
+radar_d (1789, 1, 60, 181) float32
+radar_de (1789, 1, 60, 181) float32
+radar_r_1 (1789, 1, 96, 88) float64
+radar_r_3 (1789, 1, 96, 88) float64
+radar_r_5 (1789, 1, 96, 88) float64
+radar_re_1 (1789, 1, 96, 88) float64
+radar_re_3 (1789, 1, 96, 88) float64
+radar_re_5 (1789, 1, 96, 88) float64
+imu (1789, 6) float64
+time (1789,) float64
+Processing data/all/bot_sc_basement_2.bag...
+pose_gt (1308,)
+velo_gt (1308,)
+depth_map (5904,)
+depth_map_u (5904,)
+pcd_map (1800,)
+radar_d (1799,)
+radar_de (1799,)
+radar_r_1 (1801,)
+radar_r_3 (1799,)
+radar_r_5 (1797,)
+radar_re_1 (1801,)
+radar_re_3 (1799,)
+radar_re_5 (1797,)
+imu (11976,)
+pose_gt (1797, 7) float64
+velo_gt (1797, 3) float64
+depth_map (1797, 1, 96, 88) uint8
+depth_map_u (1797, 1, 96, 704) uint8
+pcd_map (1797, 1, 96, 88) uint8
+radar_d (1797, 1, 60, 181) float32
+radar_de (1797, 1, 60, 181) float32
+radar_r_1 (1797, 1, 96, 88) float64
+radar_r_3 (1797, 1, 96, 88) float64
+radar_r_5 (1797, 1, 96, 88) float64
+radar_re_1 (1797, 1, 96, 88) float64
+radar_re_3 (1797, 1, 96, 88) float64
+radar_re_5 (1797, 1, 96, 88) float64
+imu (1797, 6) float64
+time (1797,) float64
+Processing data/all/bot_sc_basement_3.bag...
+pose_gt (1304,)
+velo_gt (1304,)
+depth_map (5734,)
+depth_map_u (5734,)
+pcd_map (1794,)
+radar_d (1797,)
+radar_de (1797,)
+radar_r_1 (1799,)
+radar_r_3 (1797,)
+radar_r_5 (1795,)
+radar_re_1 (1799,)
+radar_re_3 (1797,)
+radar_re_5 (1795,)
+imu (11965,)
+pose_gt (1797, 7) float64
+velo_gt (1797, 3) float64
+depth_map (1797, 1, 96, 88) uint8
+depth_map_u (1797, 1, 96, 704) uint8
+pcd_map (1797, 1, 96, 88) uint8
+radar_d (1797, 1, 60, 181) float32
+radar_de (1797, 1, 60, 181) float32
+radar_r_1 (1797, 1, 96, 88) float64
+radar_r_3 (1797, 1, 96, 88) float64
+radar_r_5 (1797, 1, 96, 88) float64
+radar_re_1 (1797, 1, 96, 88) float64
+radar_re_3 (1797, 1, 96, 88) float64
+radar_re_5 (1797, 1, 96, 88) float64
+imu (1797, 6) float64
+time (1797,) float64
